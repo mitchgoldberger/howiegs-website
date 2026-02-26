@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Howie G's Signature Foods</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,100 +13,179 @@
   <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-inner">
-      <a href="products.html" class="nav-link">Products</a>
-      <a href="our-story.html" class="nav-link">Our Story</a>
-      <a href="contact.html" class="nav-link">Contact</a>
       <a href="index.html" class="nav-logo">
         <img src="images/logo-wordmark.png" alt="Howie G's" class="nav-logo-img">
       </a>
       <button class="nav-toggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
+      <ul class="nav-links">
+        <li><a href="products.html">Products</a></li>
+        <li><a href="our-story.html">Our Story</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
-    <div class="hero-inner">
-      <div class="hero-text">
-        <h1>At <span class="highlight-red">Howie G's,</span> we're passionate about delivering high-quality, authentic, and handcrafted foods that make every meal an experience.</h1>
-        <p>Rooted in <span class="highlight-teal">family values</span> and a <span class="highlight-teal">commitment to excellence</span>, we offer a curated selection of products that reflect our dedication to creativity, flavor, and <span class="highlight-teal">integrity</span>. Our items are not only on-trend and easy to prepare but also designed to bring <span class="highlight-teal">value</span> to today's retailers. Whether it's the <span class="highlight-teal">trust</span> we build with our customers or the legacy of <span class="highlight-teal">quality</span> that drives us, every product we create embodies the heart and soul of our business. At Howie G's, we're not just providing food - we're crafting experiences that connect people, cultures, and stories.</p>
-        <a href="products.html" class="btn btn-primary">Explore Our Products</a>
+    <div class="hero-bg">
+      <div class="hero-accent"></div>
+    </div>
+    <div class="hero-image">
+      <img src="images/landing-page.jpg" alt="Howie G's Signature Foods">
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-label">Family Owned &mdash; Handcrafted</div>
+        <h1>High-Quality, Authentic, <span class="accent">Handcrafted</span> Foods</h1>
+        <p class="hero-desc">
+          At Howie G's, we're passionate about delivering high-quality, authentic, and handcrafted foods that make every meal an experience.
+        </p>
+        <div class="hero-buttons">
+          <a href="products.html" class="btn btn-primary">Explore Our Products</a>
+          <a href="our-story.html" class="btn btn-outline">Our Story</a>
+        </div>
       </div>
-      <div class="hero-images">
-        <img src="images/landing-page.jpg" alt="Howie G's food" class="hero-img-top">
-        <img src="images/homepage-bg.jpg" alt="Howie G's products" class="hero-img-bottom">
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <h3>40+</h3>
+          <p>Years Experience</p>
+        </div>
+        <div class="hero-stat">
+          <h3>4</h3>
+          <p>Generations</p>
+        </div>
+        <div class="hero-stat">
+          <h3>100%</h3>
+          <p>Handcrafted</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Crest Section -->
-  <section class="crest-section">
+  <!-- About Intro -->
+  <section class="section">
     <div class="container">
-      <img src="images/crest-tricolor.jpg" alt="Howie G's Signature Foods Crest" class="crest-img">
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="images/homepage-bg.jpg" alt="Howie G's products">
+        </div>
+        <div class="about-content">
+          <div class="section-label">About Us</div>
+          <h2>Four Generations of Food</h2>
+          <p>Rooted in family values and a commitment to excellence, we offer a curated selection of products that reflect our dedication to creativity, flavor, and integrity.</p>
+          <p>Our items are not only on-trend and easy to prepare but also designed to bring value to today's retailers. Whether it's the trust we build with our customers or the legacy of quality that drives us, every product we create embodies the heart and soul of our business.</p>
+          <p>At Howie G's, we're not just providing food &mdash; we're crafting experiences that connect people, cultures, and stories.</p>
+          <a href="our-story.html" class="btn btn-dark mt-40">Our Story</a>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Heritage Banner -->
   <section class="heritage-banner">
     <div class="container">
-      <p class="heritage-text"><em>40+ years serving retail and foodservice.</em></p>
+      <h3><em>40+ years serving retail and foodservice.</em></h3>
     </div>
   </section>
 
   <!-- Our Offerings -->
-  <section class="offerings-section">
+  <section class="section section-light">
     <div class="container">
-      <div class="offerings-grid">
-        <a href="beef-tamales.html" class="offering-item">
-          <div class="offering-img">
+      <div class="section-header center">
+        <div class="section-label">Our Offerings</div>
+        <h2>What We Offer</h2>
+        <p>Artisanal products inspired by traditional recipes and global flavors.</p>
+      </div>
+      <div class="products-grid">
+        <a href="beef-tamales.html" class="product-card">
+          <div class="product-card-img">
             <img src="images/tamales.jpg" alt="Tamales">
           </div>
-          <h3>Tamales</h3>
+          <div class="product-card-body">
+            <h3>Tamales</h3>
+            <span class="product-card-link">Learn More &rarr;</span>
+          </div>
         </a>
-        <a href="cheese-guava-tequeos.html" class="offering-item">
-          <div class="offering-img">
+        <a href="cheese-guava-tequeos.html" class="product-card">
+          <div class="product-card-img">
             <img src="images/tequenos-cheese.jpg" alt="Tequenos">
           </div>
-          <h3>Taquenos</h3>
+          <div class="product-card-body">
+            <h3>Teque&ntilde;os</h3>
+            <span class="product-card-link">Learn More &rarr;</span>
+          </div>
         </a>
-        <a href="beef-empanadas.html" class="offering-item">
-          <div class="offering-img">
+        <a href="beef-empanadas.html" class="product-card">
+          <div class="product-card-img">
             <img src="images/empanadas-variety.jpg" alt="Empanadas">
           </div>
-          <h3>Empanadas</h3>
-        </a>
-        <div class="offering-item coming-soon">
-          <div class="offering-img">
-            <img src="images/boil-bag.jpg" alt="Boil In The Bag">
+          <div class="product-card-body">
+            <h3>Empanadas</h3>
+            <span class="product-card-link">Learn More &rarr;</span>
           </div>
-          <h3>Boil In The Bag <span class="coming-soon-text">Coming Soon</span></h3>
+        </a>
+        <div class="product-card">
+          <div class="product-card-img">
+            <img src="images/boil-bag.jpg" alt="Boil In The Bag">
+            <div class="coming-soon-badge">Coming Soon</div>
+          </div>
+          <div class="product-card-body">
+            <h3>Boil In The Bag</h3>
+          </div>
         </div>
       </div>
-      <div class="text-center mt-60">
+      <div class="text-center mt-40">
         <a href="products.html" class="btn btn-primary">Explore Our Products</a>
       </div>
     </div>
   </section>
 
-  <!-- About Teaser -->
-  <section class="about-teaser">
-    <div class="container text-center">
-      <h2>At Howie G's, we have four generations of experience under our belts.</h2>
-      <a href="our-story.html" class="btn btn-outline-dark">Our Story</a>
+  <!-- CTA Banner -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Every Meal Is a Signature Moment</h2>
+      <p>Join us in savoring the flavors of tradition, innovation, and excellence.</p>
+      <a href="contact.html" class="btn btn-outline">Contact Us</a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-contact">
-        <p class="footer-tagline">40+ years serving retail and foodservice.</p>
-        <p><a href="tel:651-497-8067">651-497-8067</a></p>
-        <p><a href="mailto:mitch@howiegs.com">mitch@howiegs.com</a></p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/crest-tricolor.jpg" alt="Howie G's Crest" class="footer-brand-img">
+          <p>40+ years serving retail and foodservice.</p>
+        </div>
+        <div>
+          <h4>Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="our-story.html">Our Story</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:651-497-8067">651-497-8067</a></li>
+            <li><a href="mailto:mitch@howiegs.com">mitch@howiegs.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Twitter">TW</a>
+            <a href="#" aria-label="Instagram">IG</a>
+          </div>
+        </div>
       </div>
-      <div class="footer-crest">
-        <img src="images/crest-tricolor.jpg" alt="Howie G's Crest">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Howie G's Signature Foods. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
